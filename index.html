@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Chat AI</title>
+    <meta name="description" content="Hotel Chat AI offers an innovative AI-powered chatbot solution designed to transform hotel customer service. Providing 24/7 support, multilingual capabilities, and fast, accurate responses, our chatbot enhances guest experiences while improving operational efficiency. Seamlessly integrate Hotel Chat AI with a single line of code and automate guest inquiries to boost engagement, save costs, and streamline service. Whether you manage a boutique hotel or a large chain, Hotel Chat AI tailors to your unique needs for superior customer satisfaction and revenue growth.">
+    <meta name="keywords" content="Ai, Hotel, chatbot, aichatbot, chatGPT, OpenAI, Elon Musk, Hotel Chatbot, AI assisstance, replacing human, Hotel chatbot, AI-powered chatbot, 24/7 customer support,Multilingual chatbot ,Seamless integration ,Guest engagement, Hotel automation, Customer service automation,Increase hotel efficiency, Reduce operational costs, Boost hotel revenue, Instant responses, Hotel chatbot features ,Chatbot for hotels, Enhance guest experience">
+    <meta name="author" content="Hotel Chat AI">
+    <link rel="stylesheet" href="output.css">
+    <link rel="icon" href="/logo.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+        <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        @tailwind base;
+        @tailwind components;
+        @tailwind utilities;
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .animate-fadeIn {
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        /* Responsive button and text sizes for various screen widths */
+        @media (min-width: 1024px) {
+            .button-lg {
+                padding: 0.75rem 2.5rem;
+                font-size: 1.25rem;
+            }
+
+            .text-balance {
+                font-size: 1.25rem;
+            }
+
+            .title-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .button-lg {
+                padding: 0.75rem 1.5rem;
+                font-size: 1.125rem;
+            }
+
+            .text-balance {
+                font-size: 1.125rem;
+            }
+
+            .title-lg {
+                font-size: 2.75rem;
+            }
+
+            /* Ensure the navigation bar items stack correctly */
+            .navbar-items {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 5rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .button-lg {
+                padding: 0.75rem 1rem;
+                font-size: 1rem;
+            }
+
+            .text-balance {
+                font-size: 1rem;
+            }
+
+            .title-lg {
+                font-size: 2.25rem;
+            }
+
+            /* Navbar responsive adjustments */
+            .navbar-items {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 0.75rem;
+                margin-top: 1rem;
+            }
+
+            .navbar-items a {
+                display: block;
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body class="font-sans antialiased bg-black text-white" style="font-family: 'Inter', sans-serif;">
+
+    <!-- Header -->
+    <div class="w-full max-w-5xl mx-auto px-6">
+        <nav class="w-full py-4 flex flex-row items-center gap-2 sm:gap-8">
+            <a href="index.html" class="flex items-center font-bold tracking-tight">
+                <img src="logo.png" alt="Logo" class='w-12 h-12'>
+                <span class="text-lg text-violet-500 ml-2">Hotel Chat AI</span>
+            </a>
+
+            <div class='flex-1'></div>
+
+            <a href="#features" class="hidden md:block text-violet-500 font-medium hover:underline underline-offset-2 hover:decoration-violet-500/50">Features</a>
+            <a href="/pricing.html" class="hidden md:block text-violet-500 font-medium hover:underline underline-offset-2 hover:decoration-violet-500/50">Pricing</a>
+            
+            <a href='/pricing.html'>
+                <button class='px-4 py-2 text-fuchsia-400 border border-fuchsia-400 rounded-full hover:bg-fuchsia-400/50 transition hover:shadow-lg hover:shadow-fuchsia-400/20'>
+                    Get started
+                </button>
+            </a>
+        </nav>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+
+    <!-- Main Section (Hero Section) -->
+    <section class="py-20 bg-black">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center px-6 gap-8">
+            <!-- Text Content on the Left -->
+            <div>
+                <h1 class="title-lg text-violet-500 font-bold mb-6">Unlock the future of hotel customer service.</h1>
+                <p class="text-lg md:text-2xl text-purple-400 mb-8">
+                    Our AI-powered hotel chatbot revolutionizes customer service by answering your guests' questions instantly and accurately, 24/7. Enhance their experience and boost your revenue.
+                </p>
+                <div class="flex left-0 lg:justify-start space-x-4">
+                    <a href="#how-it-works" class="button-lg border border-fuchsia-400 rounded-full hover:bg-fuchsia-400/50 transition transform hover:scale-105">
+                        See How It Works
+                    </a>
+                </div>
+            </div>
+    
+            <!-- Image on the Right -->
+            <img src="bot.png" alt="Chatbot" class="rounded-lg shadow-lg w-full md:w-1/3 h-auto">
+        </div>
+    </section>
+
+    <!-- Our Top Features Section -->
+<section id="features" class="py-20 flex items-center">
+    <div class="max-w-5xl mx-auto px-6">
+        <h2 class="title-lg text-violet-500 font-bold mb-4">Our Top Features</h2>
+        <p class="text-balance text-purple-400 mb-12">Hotel Chat AI's smart features transform your customer service into a seamless and efficient experience for your guests.</p>
+
+        <div class="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 text-left">
+            <div>
+                <h3 class="text-balance font-bold">24/7 Support</h3>
+                <p class="text-balance text-purple-400">Our chatbot provides unparalleled customer support around the clock for your customers, ensuring no guest inquiry goes unanswered.</p>
+            </div>
+            <div>
+                <h3 class="text-balance font-bold">Multi-Language</h3>
+                <p class="text-balance text-purple-400">Break language barriers with our multilingual support, catering to diverse guests from all over the world, making it easier to communicate and attract guests globally.</p>
+            </div>
+            <div>
+                <h3 class="text-balance font-bold">Seamless Integration</h3>
+                <p class="text-balance text-purple-400">Hotel Chat AI can be effortlessly integrated into your website with only one line of code, making sure the process is simple and easy as possible.</p>
+            </div>
+            <div>
+                <h3 class="text-balance font-bold">Customizable Chatbots</h3>
+                <p class="text-balance text-purple-400">Hotel Chat AI's chatbots can be easily customizable to tailor to your website's style and layout. Based on your plan and requests, we will be able to change the color, the name, the chat icon, etc.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Section with See It In Action Button -->
+<section class="relative -mt-2"> <!-- Reduced the margin-top to 0 -->
+    <div class="max-w-5xl mx-auto px-6 flex justify-left md:justify-end">
+        <a id="see-demo-btn" class="button-lg border border-fuchsia-400 rounded-full hover:bg-fuchsia-400/50 transition transform hover:scale-105">
+            See It In Action
+        </a>
+        
+        
+    </div>
+</section>
+
+<!-- How It Works Section-->
+<section id="how-it-works" class="py-20 flex items-center">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="title-lg text-violet-500 font-bold mb-4">How It Works</h2>
+            <p class="text-balance text-purple-400 mb-12">Customizing your chatbot with Hotel Chat AI is simple and efficient. Follow these steps to tailor the bot to your hotel's specific needs.</p>
+    
+            <div class="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 text-left">
+                <div>
+                    <h3 class="text-balance font-bold">1. Contact Us</h3>
+                    <p class="text-balance text-purple-400">Select a plan or request a custom quote tailored to your hotel's unique needs and requirements. Whether you're a small hotel or a large chain, we have options that can be customized to match your price range and service goals. Based on your plan, you may be able to have more features.</p>
+                </div>
+                <div>
+                    <h3 class="text-balance font-bold">2. Wait For Us To Reply</h3>
+                    <p class="text-balance text-purple-400">After sending us a custome quote or selecting a plan, we will contact you back with the information you filled out as soon as we can. Then, we will be able to further compromise and talk about pricing and all the exclusive features we can offer.</p>
+                </div>
+                <div>
+                    <h3 class="text-balance font-bold">3. Add Your Information</h3>
+                    <p class="text-balance text-purple-400">After we confirm the plan that you are on, you will need to provide us with the essential details about your hotel or hotels, including room types, amenities, services, and more. This information will help shape the chatbot’s responses and enhance its accuracy, ensuring it answers all your customers' questions correctly. </p>
+                </div>
+                <div>
+                    <h3 class="text-balance font-bold">4. Customize Your Bot Further</h3>
+                    <p class="text-balance text-purple-400">Depending on the plan you have, you will be able to customize your bot, including the chat icon, the color of the bot, etc. Hotel Chat AI's chatbots are easily customizable to fit the style and needs of your websites.</p>
+                </div>
+                <div>
+                    <h3 class="text-balance font-bold">5. Integrate Into Your Website</h3>
+                    <p class="text-balance text-purple-400">After you confirm that all the information you want the bot to have is correct, we will send you the single line of code that you can copy and paste into your website.</p>
+                </div>
+                <div>
+                    <h3 class="text-balance font-bold">6. That's it!</h3>
+                    <p class="text-balance text-purple-400">Our integration is seamless and fast, ensuring no downtime during setup.</p>
+                </div>
+                <div class="flex left-0 lg:justify-start space-x-4">
+                    <a href="pricing.html" class="button-lg border border-fuchsia-400 rounded-full hover:bg-fuchsia-500 transition transform hover:scale-105">
+                        Get Started
+                    </a>
+                </div>
+    </section>
+    
+    
+    <!-- Key Benefits Section -->
+<section class="py-20">
+    <div class="max-w-5xl mx-auto flex flex-col lg:flex-row items-center">
+        <div class="md:w-1/4 flex justify-center mb-8 lg:mb-0">
+            <img src="key.png" alt="key" class="rounded-lg shadow-lg w-full h-auto">
+        </div>
+        <div class="md:w-3/4 text-left">
+            <h2 class="title-lg text-violet-500 font-bold mb-4">Key Benefits</h2>
+            <p class="text-balance text-purple-400 mb-12">Unveil the advantages of utilizing Hotel Chat AI and see how it can improve guest experience and your hotel's operations.</p>
+
+            <div class="grid gap-8 md:grid-cols-3 text-left">
+                <div>
+                    <h3 class="text-balance font-bold">Increased Efficiency</h3>
+                    <p class="text-balance text-purple-400">Automate common guest inquiries and operational tasks, freeing up your staff to focus on more critical aspects of service.</p>
+                </div>
+                <div>
+                    <h3 class="text-balance font-bold">Enhanced Engagement</h3>
+                    <p class="text-balance text-purple-400">Engage with your guests in a personalized and timely manner, making their stay more enjoyable and memorable.</p>
+                </div>
+                <div>
+                    <h3 class="text-balance font-bold">Cost Saving</h3>
+                    <p class="text-balance text-purple-400">Reduce overhead costs by streamlining customer service operations and minimizing the need for extensive staffing.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+    <!-- Frequently Asked Questions Section -->
+    <!-- Frequently Asked Questions Section -->
+<!-- Frequently Asked Questions Section -->
+<section class="py-20">
+    <div class="max-w-5xl mx-auto px-6">
+        <h2 class="title-lg text-violet-500 font-bold mb-4 text-left">Frequently Asked Questions</h2>
+        <p class="text-balance text-purple-400 mb-12 text-left">Find answers to common queries about Hotel Chat AI and how it can benefit your hotel.</p>
+
+        <div class="grid gap-8 md:grid-cols-2 text-left">
+            <div>
+                <h3 class="text-balance font-bold">How does Hotel Chat AI improve guest satisfaction?</h3>
+                <p class="text-balance text-purple-400">Hotel Chat AI offers instant, accurate responses to guests' questions, ensuring a smoother and more enjoyable stay experience, which leads to higher satisfaction ratings.</p>
+            </div>
+            <div>
+                <h3 class="text-balance font-bold">Is it easy to integrate with my current system?</h3>
+                <p class="text-balance text-purple-400">Absolutely! Hotel Chat AI is designed to seamlessly integrate with your existing website, with only one line of code!</p>
+            </div>
+            <div>
+                <h3 class="text-balance font-bold">Can Hotel Chat AI handle multiple languages?</h3>
+                <p class="text-balance text-purple-400">Yes, our chatbot supports multiple languages, making it easier to cater to guests from diverse backgrounds.</p>
+            </div>
+            <div>
+                <h3 class="text-balance font-bold">What kind of support do you offer?</h3>
+                <p class="text-balance text-purple-400">We provide technical support to ensure that your chatbot runs smoothly and efficiently, addressing any issues that may arise promptly.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Footer Section -->
+<footer class="py-6 text-center bg-black text-white">
+    <div class="max-w-5xl mx-auto">
+        <p class="text-lg text-white">© 2024 Hotel Chat AI. All rights reserved.</p>
+    </div>
+
+    <div class="flex justify-center space-x-6 mt-6">
+        <a href="quote.html" class="hover:underline text-fuchsia-400">Help</a>
+        <a href="quote.html" class="hover:underline text-fuchsia-400">Contact Us</a>
+    </div>
+
+    
+
+    <div class="flex justify-center space-x-6 mt-6">
+        <a href="#" class="hover:text-fuchsia-400 transition-colors"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="hover:text-fuchsia-400 transition-colors"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="hover:text-fuchsia-400 transition-colors"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="hover:text-fuchsia-400 transition-colors"><i class="fab fa-youtube"></i></a>
+    </div>
+</footer>
+
+
+   <!-- Custom Scripts -->
+<script src="./js/script.js"></script>
+<script src='./bot14.js' bot='website'></script>
+</body>
+</body>
+
+</html>
